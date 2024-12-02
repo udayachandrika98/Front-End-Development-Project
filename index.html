@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Practice App</title>
+    <link rel="stylesheet" href="/Users/udayak/Documents/Frontend_Project/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <!-- Settings Page -->
+        <div id="settings" class="card">
+            <h1 class="title">Arithmetic Practice App</h1>
+            <p class="subtitle">Customize your settings to start practicing!</p>
+
+            <div class="form-group">
+                <label for="numQuestions">Number of Questions:</label>
+                <input type="number" id="numQuestions" min="1" value="5" class="input">
+            </div>
+
+            <div class="form-group">
+                <label>Number Range:</label>
+                <input type="number" id="minRange" min="1" value="1" class="input small"> to
+                <input type="number" id="maxRange" min="1" value="10" class="input small">
+            </div>
+
+            <fieldset class="form-group">
+                <legend>Arithmetic Operations:</legend>
+                <label><input type="checkbox" class="operation" value="add" checked> Addition</label>
+                <label><input type="checkbox" class="operation" value="sub"> Subtraction</label>
+                <label><input type="checkbox" class="operation" value="mul"> Multiplication</label>
+                <label><input type="checkbox" class="operation" value="div"> Division</label>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="timer">Timer (seconds, optional):</label>
+                <input type="number" id="timer" min="0" value="30" class="input">
+            </div>
+
+            <div class="form-group">
+                <label><input type="checkbox" id="showAnswer"> Show Correct Answer</label>
+            </div>
+
+            <button id="startQuiz" class="btn primary">Start Quiz</button>
+        </div>
+
+        <!-- Questionnaire Page -->
+        <div id="quiz" class="card hidden">
+            <h1 class="title" id="question">Question</h1>
+            <input type="number" id="answer" placeholder="Enter your answer" class="input">
+            <div class="button-group">
+                <button id="submitAnswer" class="btn primary">Submit Answer</button>
+                <button id="nextQuestion" class="btn secondary hidden">Next Question</button>
+            </div>
+            <p id="progress" class="info"></p>
+            <p id="timerDisplay" class="info timer"></p>
+            <p id="feedback" class="info hidden"></p>
+        </div>
+
+        <!-- Results Page -->
+        <div id="results" class="card hidden">
+            <h1 class="title">Results</h1>
+            <p id="score" class="info"></p>
+            <p id="percentageScore" class="info"></p>
+            <canvas id="chart" class="chart"></canvas>
+            <p id="timeSpent" class="info"></p>
+            <button id="restartQuiz" class="btn primary">Restart Quiz</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/Users/udayak/Documents/Frontend_Project/script.js"></script>
+</body>
+</html>

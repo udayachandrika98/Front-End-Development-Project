@@ -1,0 +1,120 @@
+/* Reset and Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container */
+#app {
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Card Style */
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+/* Typography */
+.title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+.info {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #444;
+}
+.timer {
+    color: #007bff;
+    font-weight: 600;
+}
+
+/* Form Elements */
+.form-group {
+    margin: 10px 0;
+    text-align: left;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+.input:focus {
+    border-color: #007bff;
+}
+.input.small {
+    width: 48%;
+    display: inline-block;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.btn.primary {
+    background-color: #007bff;
+    color: white;
+}
+.btn.primary:hover {
+    background-color: #0056b3;
+}
+.btn.secondary {
+    background-color: #6c757d;
+    color: white;
+}
+.btn.secondary:hover {
+    background-color: #495057;
+}
+
+/* Button Group */
+.button-group {
+    margin-top: 20px;
+}
+
+/* Chart */
+.chart {
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+/* Hidden */
+.hidden {
+    display: none;
+}
